@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio Profesional - Ingeniero Multimedia y Desarrollador Front-End">
+    <title>Portafolio Profesional | Multimedia Engineer</title>
+
+    <!-- Fuentes y Recursos Externos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Vinculación del CSS Externo -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navegación -->
+    <header>
+        <a href="#" class="logo">Yisus<span>Factor</span></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#portafolio">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>The <span>Yisus Factor</span></h1>
+            <p>Elevando tu contenido al mejor nivel.</p>
+            <a href="#habilidades" class="btn">Conoce mis servicios</a>
+        </div>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section id="sobre-mi" class="reveal">
+        <div class="section-title">
+            <h2>Sobre mí</h2>
+        </div>
+        <div class="container-narrow">
+            <p>Soy un apasionado por la convergencia entre el diseño visual y el desarrollo técnico. Con experiencia en
+                la integración de datos en tiempo real y la creación de activos digitales, busco transformar ideas
+                complejas en interfaces intuitivas y estéticas.</p>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="habilidades" class="reveal">
+        <div class="section-title">
+            <h2>Mis Servicios</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fas fa-camera-retro"></i>
+                <h3>Social Media y Diseño</h3>
+                <p>Post publicitarios de alto impacto.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-film"></i>
+                <h3>Video Pro y Post-Producción</h3>
+                <p>Edición dinámica, color y efectos pro.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-cube"></i>
+                <h3>Mundo 3D y Render</h3>
+                <p>Modelado y render realistas.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Diseño Web</h3>
+                <p>Sitios modernos y optimizados.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-robot"></i>
+                <h3>Automatización de Procesos</h3>
+                <p>Creación y optimización de flujos de trabajo automatizados.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="portafolio" class="reveal">
+        <div class="section-title">
+            <h2>Proyectos Destacados</h2>
+        </div>
+        <div class="portfolio-grid">
+            <article class="project-card">
+                <div class="project-img"><i class="fas fa-bolt"></i></div>
+                <div class="project-content">
+                    <span class="tag">Streamlit</span><span class="tag">Firebase</span>
+                    <h3>Dashboard en Tiempo Real</h3>
+                    <p>Sistema de monitoreo de datos con arquitectura en la nube para seguimiento de métricas críticas.
+                    </p>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-img"><i class="fas fa-vr-cardboard"></i></div>
+                <div class="project-content">
+                    <span class="tag">AR</span><span class="tag">Game Design</span>
+                    <h3>Juego de Mesa RA</h3>
+                    <p>Integración de mecánicas de Realidad Aumentada en un juego físico interactivo para grupos.</p>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-img"><i class="fas fa-cube"></i></div>
+                <div class="project-content">
+                    <span class="tag">3D Modeling</span><span class="tag">Assets</span>
+                    <h3>Entornos Low-Poly</h3>
+                    <p>Creación de vehículos y escenarios optimizados para motores de juegos y visualización web
+                        interactiva.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="reveal">
+        <div class="section-title">
+            <h2>¿Listo para el milagro?</h2>
+            <p>Contáctanos y dale el Factor Yisus a tu marca.</p>
+            <a href="https://wa.me/573028333402" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp"></i> +57 3028333402
+            </a>
+        </div>
+        <div class="contact-container">
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="5" placeholder="¿En qué puedo ayudarte?"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>&copy; 2026 Ingeniero Multimedia. Diseñado con enfoque en usabilidad.</p>
+    </footer>
+
+    <!-- Vinculación del JavaScript Externo -->
+    <script src="../java/script.js"></script>
+</body>
+
+</html>
