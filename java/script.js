@@ -64,4 +64,39 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 1500);
         });
     }
+
+    // 5. Efecto de partículas / Nebulosa en el cursor
+    document.addEventListener('mousemove', (e) => {
+        // Limitamos la creación de partículas para rendimiento
+        if (Math.random() > 0.25) return; 
+
+        const particle = document.createElement('div');
+        particle.className = 'cursor-particle';
+        document.body.appendChild(particle);
+
+        const size = Math.random() * 8 + 4; // Tamaño entre 4px y 12px
+        particle.style.width = `${size}px`;
+        particle.style.height = `${size}px`;
+        
+        // Posicionamiento centrado en el cursor (fixed para seguir el viewport)
+        particle.style.left = `${e.clientX - size / 2}px`;
+        particle.style.top = `${e.clientY - size / 2}px`;
+
+        // Colores aleatorios con temática espacial/naranja
+        const colors = ['#ff6b00', '#ffffff', '#2563eb', '#ffb700', '#00d2ff'];
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        particle.style.background = randomColor;
+        particle.style.boxShadow = `0 0 10px ${randomColor}, 0 0 20px ${randomColor}`;
+
+        // Dirección de dispersión aleatoria
+        const destX = (Math.random() - 0.5) * 80;
+        const destY = (Math.random() - 0.5) * 80;
+        particle.style.setProperty('--x', `${destX}px`);
+        particle.style.setProperty('--y', `${destY}px`);
+
+        // Remover del DOM al finalizar la animación
+        particle.addEventListener('animationend', () => {
+            particle.remove();
+        });
+    });
 });
